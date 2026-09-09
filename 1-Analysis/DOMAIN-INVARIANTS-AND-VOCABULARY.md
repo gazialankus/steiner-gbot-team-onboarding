@@ -16,7 +16,7 @@
 Unknown is an honest first-class answer. Missing data is never rendered as Healthy, zero, or a guess; Unknown never overrides determinate evidence; a verdict must be a function of its evidence. `[M44, AE, AF]`
 
 **P-2 · Opportunistic resilience — "roll with the punches."** `[GBot]`
-The system pursues its goals through the best currently available path and never treats a component failure as an excuse not to deliver. Backend down → the local safety path still warns the user. Gateway LTE dead → the phone can carry data up (`PROPOSAL`, see OQ-3). Push undeliverable → the BLE path is unaffected. Guardrail: opportunism degrades latency, coverage, or precision — **never honesty** (P-1) and never evidence integrity (EVT-6). A fallback path reports itself as what it is.
+The system pursues its goals through the best currently available path and never treats a component failure as an excuse not to deliver. Backend down → the local safety path still warns the user. Gateway LTE dead → the phone can carry data up (client-approved 2026-09-08; see OQ-3). Push undeliverable → the BLE path is unaffected. Guardrail: opportunism degrades latency, coverage, or precision — **never honesty** (P-1) and never evidence integrity (EVT-6). A fallback path reports itself as what it is.
 
 **P-3 · The server is the authority; clients render.**
 Authorization, validation, timestamps, actors, freshness verdicts, counts, ordering, population resolution, and health roll-ups are computed server-side. A hidden button is not authorization; local storage is not a security boundary. `[01 §1, 03 §3, ABIS]`
